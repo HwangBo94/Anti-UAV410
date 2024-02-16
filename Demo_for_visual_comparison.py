@@ -8,21 +8,27 @@ import numpy as np
 import io
 
 
+"""
+Experiments Setup
+"""
+
+dataset_path = 'D:/Codes/Datasets/Anti-UAV410/Anti-UAV410/Anti-UAV/'
+
+# test or val
+subset = 'test'
+
+# show window size
+winwidth=640
+winheight=512
+
+seq_name = 'all'
+# seq_name = '3700000000002_133828_2'
+
+save_path='./figures'
+
 def main(visulization=True):
 
-    dataset_path = 'D:/Codes/Datasets/Anti-UAV410/Anti-UAV410/Anti-UAV/'
-
-    # test or val
-    subset = 'test'
-
-    # show window size
-    winwidth=640
-    winheight=512
-
-    seq_name = 'all'
-    # seq_name = '3700000000002_133828_2'
-
-    save_path='./figures'
+    
 
     dataset_path = os.path.join(dataset_path, subset)
 

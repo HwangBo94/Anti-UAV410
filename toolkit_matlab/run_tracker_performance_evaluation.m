@@ -9,8 +9,8 @@ addpath('./utils/');
 addpath('./sequence_evaluation_config/');
 
 tmp_mat_path  = './tmp_mat/';          % path to save temporary results
-path_anno     = '../anno/test/';            % path to annotations
-path_att      = '../anno/test/att/';        % path to attribute
+path_anno     = '../annos/test/';            % path to annotations
+path_att      = '../annos/test/att/';        % path to attribute
 rp_all        = './tracking_results/'; % path to tracking results
 save_fig_path = './res_fig/';          % path to result figures
 save_fig_suf  = 'png';                 % suffix of figures, 'png' or 'eps'

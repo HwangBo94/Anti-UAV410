@@ -7,6 +7,10 @@ from trackers.SiamFC.siamfc import TrackerSiamFC
 from experiments import ExperimentAntiUAV410
 
 
+"""
+Experiments Setup
+"""
+
 dataset_path='D:/Codes/Datasets/Anti-UAV410/Anti-UAV410/Anti-UAV/'
 
 # test or val

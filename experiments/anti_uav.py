@@ -216,7 +216,7 @@ class ExperimentAntiUAV410(object):
                         tracker['path'], 'test_metrics/anti-uav410-%s/%s/bounding_box.txt' % (self.subset, seq_name))
 
                 att_file = os.path.join(
-                    'anno', self.subset, 'att', '%s.txt' % seq_name)
+                    'annos', self.subset, 'att', '%s.txt' % seq_name)
                 with open(att_file, 'r') as f:
                     att_temp = np.loadtxt(io.StringIO(f.read().replace(',', ' ')))
                 att_list.append(att_temp)
