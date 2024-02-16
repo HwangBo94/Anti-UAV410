@@ -29,6 +29,7 @@ pip install torchvision===0.10.1 -f https://download.pytorch.org/whl/torch_stabl
 Other versions of python, cuda and torch are also compatible.
 
 **Step 3.** Testing the default SiamFC tracker.
+
 Change the dataset_path in the Demo_for_tracking.py file to the path where the dataset is located.
 Run
 ```shell
@@ -37,6 +38,7 @@ python Demo_for_tracking.py
 The tracking results will be saved at project_dir/results/AntiUAV410/test/SiamFC.
 
 **Step 4.** Testing the default SiamFC tracker.
+
 Change the dataset path and select the trackers that need to be compared visually.
 Run
 ```shell
@@ -44,6 +46,7 @@ python Demo_for_visual_comparison.py
 ```
 
 **Step 5.** Evaluating the trackers.
+
 Change the dataset path and edit project_dir/utils/trackers.py to select the trackers to be evaluated.
 Run
 ```shell
