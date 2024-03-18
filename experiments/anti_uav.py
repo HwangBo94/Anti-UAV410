@@ -508,8 +508,15 @@ class ExperimentAntiUAV410(object):
             else:
                 legends.append('%s: [%.3f]' % (name, performance[name][key]['success_score']))
         # matplotlib.rcParams.update({'font.size': 15.0})
+
+        # for Default trackers
         legend = ax.legend(lines, legends, bbox_to_anchor=(0.98,-0.19), loc="lower right",
                 bbox_transform=fig.transFigure, ncol=4, frameon=False)
+
+        # for Re-trained trackers
+        # legend = ax.legend(lines, legends, bbox_to_anchor=(0.98, -0.07), loc="lower right",
+        #                    bbox_transform=fig.transFigure, ncol=4, frameon=False)
+        
         matplotlib.rcParams.update({'font.size': 9.0})
 
         #matplotlib.rcParams.update({'font.size': 11})
@@ -554,8 +561,15 @@ class ExperimentAntiUAV410(object):
             else:
                 legends.append('%s: [%.3f]' % (name, performance[name][key]['precision_score']))
         # matplotlib.rcParams.update({'font.size': 7.4})
+
+        # for Default trackers
         legend = ax.legend(lines, legends, bbox_to_anchor=(0.97,-0.19), loc="lower right",
                 bbox_transform=fig.transFigure, ncol=4, frameon=False)
+
+        # for Re-trained trackers
+        # legend = ax.legend(lines, legends, bbox_to_anchor=(0.97, -0.07), loc="lower right",
+        #                    bbox_transform=fig.transFigure, ncol=4, frameon=False)
+
         matplotlib.rcParams.update({'font.size': 9.0})
 
         # matplotlib.rcParams.update({'font.size': 11})
@@ -626,8 +640,15 @@ class ExperimentAntiUAV410(object):
             else:
                 legends.append('%s: [%.3f]' % (name, performance[name][att_key]['att_success_score']))
         # matplotlib.rcParams.update({'font.size': 15.0})
+
+        # for Default trackers
         legend = ax.legend(lines, legends, bbox_to_anchor=(0.98, -0.19), loc="lower right",
                            bbox_transform=fig.transFigure, ncol=4, frameon=False)
+
+        # for Re-trained trackers
+        # legend = ax.legend(lines, legends, bbox_to_anchor=(0.98, -0.07), loc="lower right",
+        #                    bbox_transform=fig.transFigure, ncol=4, frameon=False)
+
         matplotlib.rcParams.update({'font.size': 9.0})
 
         # matplotlib.rcParams.update({'font.size': 11})
@@ -673,8 +694,15 @@ class ExperimentAntiUAV410(object):
             else:
                 legends.append('%s: [%.3f]' % (name, performance[name][att_key]['att_precision_score']))
         # matplotlib.rcParams.update({'font.size': 7.4})
+
+        # for Default trackers
         legend = ax.legend(lines, legends, bbox_to_anchor=(0.97, -0.19), loc="lower right",
                            bbox_transform=fig.transFigure, ncol=4, frameon=False)
+
+        # for Re-trained trackers
+        # legend = ax.legend(lines, legends, bbox_to_anchor=(0.97, -0.07), loc="lower right",
+        #                    bbox_transform=fig.transFigure, ncol=4, frameon=False)
+
         matplotlib.rcParams.update({'font.size': 9.0})
 
         # matplotlib.rcParams.update({'font.size': 11})

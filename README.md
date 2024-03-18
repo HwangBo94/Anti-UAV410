@@ -86,80 +86,67 @@ The evaluation plots will be saved at project_dir/reports/AntiUAV410/.
 Over 50 trackers are involved, they are:
 ### Default trackers
 
-<img src="reports/AntiUAV410/test/precision_plots.png" width="48%"><img src="reports/AntiUAV410/test/success_plots.png" width="48%">
+<img src="figures/precision_plots_Default.png" width="48%"><img src="figures/success_plots_Default.png" width="48%">
 
 * **MixFormerV2-B.** Cui, Yutao, et al. "Mixformerv2: Efficient fully transformer tracking." NIPS, 2023. [[Github]](https://github.com/MCG-NJU/MixFormerV2)
 * **ROMTrack.** Cai, Yidong, et al. "Robust object modeling for visual tracking." ICCV, 2023. [[Github]](https://github.com/dawnyc/ROMTrack)
-* **GRM.**  Gao, Shenyuan, et al. "Generalized relation modeling for transformer tracking." CVPR, 2023. [[Github]](https://github.com/Little-Podi/GRM)
+* **GRM.** Gao, Shenyuan, et al. "Generalized relation modeling for transformer tracking." CVPR, 2023. [[Github]](https://github.com/Little-Podi/GRM)
 * **DropTrack.**  Wu, Qiangqiang, et al. "Dropmae: Masked autoencoders with spatial-attention dropout for tracking tasks." CVPR, 2023. [[Github]](https://github.com/jimmy-dq/DropMAE)
-* **ARTrack.**  Wei, Xing, et al. "Autoregressive visual tracking." CVPR, 2023. [[Github]](https://github.com/MIV-XJTU/ARTrack)
-* **SeqTrack-B256.**  Chen, Xin, et al. "Seqtrack: Sequence to sequence learning for visual object tracking." CVPR, 2023. [[Github]](https://github.com/microsoft/VideoX)
-* **SeqTrack-B384.**  Chen, Xin, et al. "Seqtrack: Sequence to sequence learning for visual object tracking." CVPR, 2023. [[Github]](https://github.com/microsoft/VideoX)
+* **ARTrack.** Wei, Xing, et al. "Autoregressive visual tracking." CVPR, 2023. [[Github]](https://github.com/MIV-XJTU/ARTrack)
+* **SeqTrack-B256.** Chen, Xin, et al. "Seqtrack: Sequence to sequence learning for visual object tracking." CVPR, 2023. [[Github]](https://github.com/microsoft/VideoX)
+* **SeqTrack-B384.** Chen, Xin, et al. "Seqtrack: Sequence to sequence learning for visual object tracking." CVPR, 2023. [[Github]](https://github.com/microsoft/VideoX)
+* **JointNLT.** Zhou, Li, et al. "Joint visual grounding and tracking with natural language specification." CVPR, 2023. [[Github]](https://github.com/lizhou-cs/JointNLT)
+* **SwinTrack-Tiny.** Lin, Liting, et al. "Swintrack: A simple and strong baseline for transformer tracking." NIPS, 2022. [[Github]](https://github.com/LitingLin/SwinTrack)
+* **SwinTrack-Base.** Lin, Liting, et al. "Swintrack: A simple and strong baseline for transformer tracking." NIPS, 2022. [[Github]](https://github.com/LitingLin/SwinTrack)
+* **ToMP50.** Mayer, Christoph, et al. "Transforming model prediction for tracking." CVPR, 2022. [[Github]](https://github.com/visionml/pytracking)
+* **ToMP101.** Mayer, Christoph, et al. "Transforming model prediction for tracking." CVPR, 2022. [[Github]](https://github.com/visionml/pytracking)
+* **TCTrack.** Cao, Ziang, et al. "Tctrack: Temporal contexts for aerial tracking." CVPR, 2022. [[Github]](https://github.com/vision4robotics/TCTrack)
+* **SLT-TransT.** Kim, Minji, et al. "Towards sequence-level training for visual tracking." ECCV, 2022. [[Github]](https://github.com/byminji/SLTtrack)
+* **OSTrack-256.** Ye, Botao, et al. "Joint feature learning and relation modeling for tracking: A one-stream framework." ECCV, 2022. [[Github]](https://github.com/botaoye/OSTrack)
+* **OSTrack-384.** Ye, Botao, et al. "Joint feature learning and relation modeling for tracking: A one-stream framework." ECCV, 2022. [[Github]](https://github.com/botaoye/OSTrack)
+* **AiATrack.** Gao, Shenyuan, et al. "Aiatrack: Attention in attention for transformer visual tracking." ECCV, 2022. [[Github]](https://github.com/Little-Podi/AiATrack)
+* **Unicorn-Tiny.** Yan, Bin, et al. "Towards grand unification of object tracking." ECCV, 2022. [[Github]](https://github.com/MasterBin-IIAU/Unicorn)
+* **Unicorn-Large.** Yan, Bin, et al. "Towards grand unification of object tracking." ECCV, 2022. [[Github]](https://github.com/MasterBin-IIAU/Unicorn)
+* **RTS.** Paul, Matthieu, et al. "Robust visual tracking by segmentation." ECCV, 2022. [[Github]](https://github.com/visionml/pytracking)
+* **KeepTrack.** Mayer, Christoph, et al. "Learning target candidate association to keep track of what not to track." ICCV, 2021. [[Github]](https://github.com/visionml/pytracking)
+* **Stark-ST50.** Yan, Bin, et al. "Learning spatio-temporal transformer for visual tracking." ICCV, 2021. [[Github]](https://github. com/researchmm/Stark)
+* **Stark-ST101.** Yan, Bin, et al. "Learning spatio-temporal transformer for visual tracking." ICCV, 2021. [[Github]](https://github. com/researchmm/Stark)
+* **HiFT.** Cao, Ziang, et al. "Hift: Hierarchical feature transformer for aerial tracking." ICCV, 2021. [[Github]](https://github. com/vision4robotics/HiFT)
+* **STMTrack.** Fu, Zhihong, et al. "Stmtrack: Template-free visual tracking with space-time memory networks." CVPR, 2021. [[Github]](https://github. com/fzh0917/STMTrack)
+* **TrDiMP.** Wang, Ning, et al. "Transformer meets tracker: Exploiting temporal context for robust visual tracking." CVPR, 2021. [[Github]](https://github.com/594422814/TransformerTrack)
+* **TransT.** Chen, Xin, et al. "Transformer tracking." CVPR, 2021. [[Github]](https://github.com/chenxin-dlut/TransT)
+* **ROAM.** Yang, Tianyu, et al. "ROAM: Recurrently optimizing tracking model." CVPR, 2020. [[Github]](https://github.com/tyyyang/ROAM)
+* **Siam R-CNN.** Voigtlaender, Paul, et al. "Siam r-cnn: Visual tracking by re-detection." CVPR, 2020. [[Github]](https://www.vision.rwth-aachen.de/page/siamrcnn)
+* **SiamBAN.** Chen, Zedu, et al. "Siamese box adaptive network for visual tracking." CVPR, 2020. [[Github]](https://github. com/hqucv/siamban)
+* **SiamCAR.** Guo, Dongyan, et al. "SiamCAR: Siamese fully convolutional classification and regression for visual tracking." CVPR, 2020. [[Github]](https://github. com/ohhhyeahhh/SiamCAR)
+* **GlobalTrack.** Huang, Lianghua, et al. "Globaltrack: A simple and strong baseline for long-term tracking." AAAI, 2020. [[Github]](https://github.com/huanglianghua/GlobalTrack)
+* **KYS.** Bhat, Goutam, et al. "Know your surroundings: Exploiting scene information for object tracking." ECCV, 2020. [[Github]](https://github.com/visionml/pytracking)
+* **Super DiMP.** -- -- --. [[Github]](https://github.com/visionml/pytracking)
+* **PrDiMP50.** Danelljan, Martin, et al. "Probabilistic regression for visual tracking." CVPR, 2020. [[Github]](https://github.com/visionml/pytracking)
+* **SiamFC++.** Xu, Yinda, et al. "Siamfc++: Towards robust and accurate visual tracking with target estimation guidelines." AAAI, 2020. [[Github]](https://github.com/megvii-research/video_analyst)
 
-
-
-
-JointNLT [65] CVPR23 48.92 54.36
-SwinTrack-Tiny [64] NIPS22 51.23 56.83
-SwinTrack-Base [64] NIPS22 52.41 55.76
-ToMP50 [63] CVPR22 52.95 55.56
-ToMP101 [63] CVPR22 54.52 60.14
-TCTrack [62] CVPR22 35.37 35.05
-SLT-TransT [61] ECCV22 50.90 57.62
-OSTrack-256 [60] ECCV22 43.75 52.60
-OSTrack-384 [60] ECCV22 53.53 59.20
-AiATrack [59] ECCV22 53.91 55.24
-Unicorn-Large [58] ECCV22 56.55 59.38
-Unicorn-Tiny [58] ECCV22 55.42 58.93
-RTS [57] ECCV22 54.68 57.19
-KeepTrack [56] ICCV21 55.97 58.34
-Stark-ST50 [55] ICCV21 54.07 61.43
-Stark-ST101 [55] ICCV21 54.15 59.57
-HiFT [54] ICCV21 33.84 41.74
-STMTrack [53] CVPR21 38.98 41.24
-TrDiMP [51] CVPR21 50.20 55.47
-TransT [52] CVPR21 48.85 55.24
-ROAM [50] CVPR20 42.41 47.77
-Siam R-CNN [12] CVPR20 60.54 64.81
-SiamBAN [38] CVPR20 36.69 38.36
-SiamCAR [39] CVPR20 41.73 48.18
-GlobalTrack [42] AAAI20 59.34 63.39
-KYS [49] ECCV20 44.70 49.61
-Super DiMP [48] - 53.12 55.87
-PrDiMP50 [47] CVPR20 51.87 53.35
-SiamFC++ [46] AAAI20 41.03 45.15
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+* **and so on.**
 
 ### Re-trained trackers
+
+<img src="figures/precision_plots_Re-trained.png" width="48%"><img src="figures/success_plots_Re-trained.png" width="48%">
+
+* **MixFormerV2-B.** Cui, Yutao, et al. "Mixformerv2: Efficient fully transformer tracking." NIPS, 2023. [[Github]](https://github.com/MCG-NJU/MixFormerV2)
+* **DropTrack.**  Wu, Qiangqiang, et al. "Dropmae: Masked autoencoders with spatial-attention dropout for tracking tasks." CVPR, 2023. [[Github]](https://github.com/jimmy-dq/DropMAE)
+* **SwinTrack-Tiny.** Lin, Liting, et al. "Swintrack: A simple and strong baseline for transformer tracking." NIPS, 2022. [[Github]](https://github.com/LitingLin/SwinTrack)
+* **SwinTrack-Base.** Lin, Liting, et al. "Swintrack: A simple and strong baseline for transformer tracking." NIPS, 2022. [[Github]](https://github.com/LitingLin/SwinTrack)
+* **ToMP50.** Mayer, Christoph, et al. "Transforming model prediction for tracking." CVPR, 2022. [[Github]](https://github.com/visionml/pytracking)
+* **ToMP101.** Mayer, Christoph, et al. "Transforming model prediction for tracking." CVPR, 2022. [[Github]](https://github.com/visionml/pytracking)
+* **TCTrack.** Cao, Ziang, et al. "Tctrack: Temporal contexts for aerial tracking." CVPR, 2022. [[Github]](https://github.com/vision4robotics/TCTrack)
+* **AiATrack.** Gao, Shenyuan, et al. "Aiatrack: Attention in attention for transformer visual tracking." ECCV, 2022. [[Github]](https://github.com/Little-Podi/AiATrack)
+* **KeepTrack.** Mayer, Christoph, et al. "Learning target candidate association to keep track of what not to track." ICCV, 2021. [[Github]](https://github.com/visionml/pytracking)
+* **Stark-ST101.** Yan, Bin, et al. "Learning spatio-temporal transformer for visual tracking." ICCV, 2021. [[Github]](https://github. com/researchmm/Stark)
+* **Siam R-CNN.** Voigtlaender, Paul, et al. "Siam r-cnn: Visual tracking by re-detection." CVPR, 2020. [[Github]](https://www.vision.rwth-aachen.de/page/siamrcnn)
+* **SiamBAN.** Chen, Zedu, et al. "Siamese box adaptive network for visual tracking." CVPR, 2020. [[Github]](https://github. com/hqucv/siamban)
+* **GlobalTrack.** Huang, Lianghua, et al. "Globaltrack: A simple and strong baseline for long-term tracking." AAAI, 2020. [[Github]](https://github.com/huanglianghua/GlobalTrack)
+* **KYS.** Bhat, Goutam, et al. "Know your surroundings: Exploiting scene information for object tracking." ECCV, 2020. [[Github]](https://github.com/visionml/pytracking)
+* **Super DiMP.** -- -- --. [[Github]](https://github.com/visionml/pytracking)
+* **PrDiMP50.** Danelljan, Martin, et al. "Probabilistic regression for visual tracking." CVPR, 2020. [[Github]](https://github.com/visionml/pytracking)
 
 
 ## Citation

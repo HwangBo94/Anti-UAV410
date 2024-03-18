@@ -10,7 +10,7 @@ import io
 
 def main(visulization=True):
 
-    dataset_path = 'path-to-Anti-UAV410'
+    dataset_path = 'path/to/Anti-UAV410'
 
     # test or val
     subset = 'test'
