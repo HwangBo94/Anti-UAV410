@@ -215,6 +215,10 @@ class ExperimentAntiUAV410(object):
                     record_file = os.path.join(
                         tracker['path'], 'test_metrics/anti-uav410-%s/%s/bounding_box.txt' % (self.subset, seq_name))
 
+                if name == 'SwinTrack-Base':
+                    record_file = os.path.join(
+                        tracker['path'], 'test_metrics/anti-uav410-%s/%s/bounding_box.txt' % (self.subset, seq_name))
+
                 att_file = os.path.join(
                     'annos', self.subset, 'att', '%s.txt' % seq_name)
                 with open(att_file, 'r') as f:
@@ -484,7 +488,7 @@ class ExperimentAntiUAV410(object):
 
         # activate latex text rendering
         #matplotlib.rc('text', usetex=True)
-        matplotlib.rcParams.update({'font.size': 7.4})
+        matplotlib.rcParams.update({'font.size': 6.8})
 
         # plot success curves
         thr_iou = np.linspace(0, 1, self.nbins_iou)
@@ -504,7 +508,7 @@ class ExperimentAntiUAV410(object):
             else:
                 legends.append('%s: [%.3f]' % (name, performance[name][key]['success_score']))
         # matplotlib.rcParams.update({'font.size': 15.0})
-        legend = ax.legend(lines, legends, bbox_to_anchor=(1.0,-0.12), loc="lower right",
+        legend = ax.legend(lines, legends, bbox_to_anchor=(0.98,-0.19), loc="lower right",
                 bbox_transform=fig.transFigure, ncol=4, frameon=False)
         matplotlib.rcParams.update({'font.size': 9.0})
 
@@ -533,7 +537,7 @@ class ExperimentAntiUAV410(object):
         tracker_names = [tracker_names[i] for i in inds]
 
         # plot precision curves
-        matplotlib.rcParams.update({'font.size': 7.4})
+        matplotlib.rcParams.update({'font.size': 6.8})
         thr_ce = np.arange(0, self.nbins_ce)
         fig, ax = plt.subplots()
         lines = []
@@ -550,7 +554,7 @@ class ExperimentAntiUAV410(object):
             else:
                 legends.append('%s: [%.3f]' % (name, performance[name][key]['precision_score']))
         # matplotlib.rcParams.update({'font.size': 7.4})
-        legend = ax.legend(lines, legends, bbox_to_anchor=(1.0,-0.12), loc="lower right",
+        legend = ax.legend(lines, legends, bbox_to_anchor=(0.97,-0.19), loc="lower right",
                 bbox_transform=fig.transFigure, ncol=4, frameon=False)
         matplotlib.rcParams.update({'font.size': 9.0})
 
@@ -601,7 +605,7 @@ class ExperimentAntiUAV410(object):
 
         # activate latex text rendering
         # matplotlib.rc('text', usetex=True)
-        matplotlib.rcParams.update({'font.size': 7.4})
+        matplotlib.rcParams.update({'font.size': 6.8})
 
         # plot success curves
         thr_iou = np.linspace(0, 1, self.nbins_iou)
@@ -622,7 +626,7 @@ class ExperimentAntiUAV410(object):
             else:
                 legends.append('%s: [%.3f]' % (name, performance[name][att_key]['att_success_score']))
         # matplotlib.rcParams.update({'font.size': 15.0})
-        legend = ax.legend(lines, legends, bbox_to_anchor=(1.0, -0.12), loc="lower right",
+        legend = ax.legend(lines, legends, bbox_to_anchor=(0.98, -0.19), loc="lower right",
                            bbox_transform=fig.transFigure, ncol=4, frameon=False)
         matplotlib.rcParams.update({'font.size': 9.0})
 
@@ -651,7 +655,7 @@ class ExperimentAntiUAV410(object):
         tracker_names = [tracker_names[i] for i in inds]
 
         # plot precision curves
-        matplotlib.rcParams.update({'font.size': 7.4})
+        matplotlib.rcParams.update({'font.size': 6.8})
         thr_ce = np.arange(0, self.nbins_ce)
         fig, ax = plt.subplots()
         lines = []
@@ -669,7 +673,7 @@ class ExperimentAntiUAV410(object):
             else:
                 legends.append('%s: [%.3f]' % (name, performance[name][att_key]['att_precision_score']))
         # matplotlib.rcParams.update({'font.size': 7.4})
-        legend = ax.legend(lines, legends, bbox_to_anchor=(1.0, -0.12), loc="lower right",
+        legend = ax.legend(lines, legends, bbox_to_anchor=(0.97, -0.19), loc="lower right",
                            bbox_transform=fig.transFigure, ncol=4, frameon=False)
         matplotlib.rcParams.update({'font.size': 9.0})
 

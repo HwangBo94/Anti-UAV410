@@ -3,9 +3,6 @@ from experiments import ExperimentAntiUAV410
 from utils.trackers import Default_Trackers as Trackers
 # from utils.trackers import Trained_Trackers as Trackers
 
-"""
-Experiments Setup
-"""
 evaluation_metrics=['State accuracy', 'Success plots', 'Precision plots']
 
 dataset_path='D:/Codes/Datasets/Anti-UAV410/Anti-UAV410/Anti-UAV/'

@@ -17,6 +17,7 @@ evaluation_mode = 'test'
 # set the path for the predicted tracking results
 pred_path = './Tracking_results/Trained_with_antiuav410/SiamDT/'
 
+
 # mode 1 means the results is formatted by (x,y,w,h)
 # mode 2 means the results is formatted by (x1,y1,x2,y2)
 mode = 1

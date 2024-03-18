@@ -8,38 +8,32 @@ import numpy as np
 import io
 
 
-"""
-Experiments Setup
-"""
-
-dataset_path = 'D:/Codes/Datasets/Anti-UAV410/Anti-UAV410/Anti-UAV/'
-
-# test or val
-subset = 'test'
-
-# show window size
-winwidth=640
-winheight=512
-
-seq_name = 'all'
-# seq_name = '3700000000002_133828_2'
-
-save_path='./figures'
-
 def main(visulization=True):
 
-    
+    dataset_path = 'D:/Codes/Datasets/Anti-UAV410/Anti-UAV410/Anti-UAV/'
+
+    # test or val
+    subset = 'test'
+
+    # show window size
+    winwidth=640
+    winheight=512
+
+    seq_name = 'all'
+    # seq_name = '3700000000002_133828_2'
+
+    save_path='./figures'
 
     dataset_path = os.path.join(dataset_path, subset)
 
     # mode 1 means the results is formatted by (x,y,w,h)
     # mode 2 means the results is formatted by (x1,y1,x2,y2)
     trackers=[
-        {'name': 'KeepTrack', 'path': './Tracking_results/Trained_with_antiuav410/keep_track', 'mode': 1},
-        {'name': 'AiATrack', 'path': './Tracking_results/Trained_with_antiuav410/aiatrack/baseline', 'mode': 1},
+        {'name': 'KeepTrack', 'path': './Tracking_results/Trained_with_antiuav410/KeepTrack', 'mode': 1},
+        {'name': 'AiATrack', 'path': './Tracking_results/Trained_with_antiuav410/AiATrack/baseline', 'mode': 1},
         {'name': 'SiamBAN', 'path': './Tracking_results/Trained_with_antiuav410/SiamBAN', 'mode': 1},
         {'name': 'SiamCAR', 'path': './Tracking_results/Trained_with_antiuav410/SiamCAR', 'mode': 1},
-        {'name': 'Stark', 'path': './Tracking_results/Trained_with_antiuav410/Stark', 'mode': 1},
+        {'name': 'Stark', 'path': './Tracking_results/Trained_with_antiuav410/Stark-ST101', 'mode': 1},
         {'name': 'SwinTrack-Tiny', 'path': './Tracking_results/Trained_with_antiuav410/SwinTrack-Tiny', 'mode': 2},
         {'name': 'SiamDT', 'path': './Tracking_results/Trained_with_antiuav410/SiamDT', 'mode': 1},
     ]
