@@ -86,7 +86,6 @@ The evaluation plots will be saved at project_dir/reports/AntiUAV410/.
 Over 50 trackers are involved, they are:
 ### Default trackers
 
-<img src="figures/precision_plots_Default.png" width="90%">
 <img src="figures/success_plots_Default.png" width="90%">
 
 * **MixFormerV2-B.** Cui, Yutao, et al. "Mixformerv2: Efficient fully transformer tracking." NIPS, 2023. [[Github]](https://github.com/MCG-NJU/MixFormerV2)
@@ -130,7 +129,7 @@ Over 50 trackers are involved, they are:
 
 ### Re-trained trackers
 
-<img src="figures/precision_plots_Re-trained.png" width="48%"><img src="figures/success_plots_Re-trained.png" width="48%">
+<img src="figures/success_plots_Re-trained.png" width="90%">
 
 * **MixFormerV2-B.** Cui, Yutao, et al. "Mixformerv2: Efficient fully transformer tracking." NIPS, 2023. [[Github]](https://github.com/MCG-NJU/MixFormerV2)
 * **DropTrack.**  Wu, Qiangqiang, et al. "Dropmae: Masked autoencoders with spatial-attention dropout for tracking tasks." CVPR, 2023. [[Github]](https://github.com/jimmy-dq/DropMAE)
