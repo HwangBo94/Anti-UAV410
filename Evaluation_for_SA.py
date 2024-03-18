@@ -11,7 +11,7 @@ import io
 Experiments Setup
 """
 # set the dataset path
-dataset_path = 'D:/Codes/Datasets/Anti-UAV410/Anti-UAV410/Anti-UAV/'
+dataset_path = 'path/to/Anti-UAV410'
 # set 'test' or 'val' for evaluation
 evaluation_mode = 'test'
 # set the path for the predicted tracking results
