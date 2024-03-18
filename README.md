@@ -52,6 +52,8 @@ Download the tracking results ([Google drive](https://drive.google.com/file/d/1z
     	|--Trained_with_antiuav410
     ```
 
+The files inside the Defaults directory are the results of the trackers that are not trained with Anti-UAV410, while The files inside the Trained_with_antiuav410 directory are the results of the trackers that are trained with Anti-UAV410 dataset.
+
 **Step 5.** Visual comparison.
 
 Change the dataset path and select the trackers that need to be compared visually.
@@ -81,7 +83,15 @@ python Evaluation_for_ALL.py
 
 The evaluation plots will be saved at project_dir/reports/AntiUAV410/.
 
-<img src="reports/AntiUAV410/test/precision_plots.png" width="45%"><img src="reports/AntiUAV410/test/success_plots.png" width="45%">
+Over 50 trackers are involved, they are:
+### Default trackers
+
+<img src="reports/AntiUAV410/test/precision_plots.png" width="48%"><img src="reports/AntiUAV410/test/success_plots.png" width="48%">
+
+* **MixFormerV2-B.** Cui, Yutao, et al. "Mixformerv2: Efficient fully transformer tracking." NIPS, 2023. [[Github]](https://github.com/MCG-NJU/MixFormerV2)
+* **MixFormerV2-B.** Cui, Yutao, et al. "Mixformerv2: Efficient fully transformer tracking." NIPS, 2023. [[Github]](https://github.com/MCG-NJU/MixFormerV2)
+
+### Re-trained trackers
 
 
 ## Citation
