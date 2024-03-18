@@ -81,7 +81,7 @@ python Evaluation_for_ALL.py
 
 The evaluation plots will be saved at project_dir/reports/AntiUAV410/.
 
-<img src="reports/AntiUAV410/test/precision_plots.png" width="45%"><img src="reports/AntiUAV410/test/success_plots.png" width="48%">
+<img src="reports/AntiUAV410/test/precision_plots.png" width="45%"><img src="reports/AntiUAV410/test/success_plots.png" width="45%">
 
 
 ## Citation
