@@ -63,6 +63,7 @@ python Demo_for_visual_comparison.py
 
 The comparison figures will be saved at project_dir/figures/.
 ![contents](./figures/02_6319_1500-2999.jpg)
+<img src="figures/02_6319_1500-2999.jpg" width="30%">
 
 
 ``not exist'' in the figure means that the target is occluded or out of view.
