@@ -341,6 +341,8 @@ class ExperimentAntiUAV410(object):
 
         # import pdb;pdb.set_trace()
         sa_file = os.path.join(report_dir, 'state_accuracy_scores.txt')
+        if os.path.exists(sa_file):
+            os.remove(sa_file)
         text = '[Overall] %20s %20s: %s' % ('Tracker name', 'Experiments metric', 'Scores')
         with open(sa_file, 'a', encoding='utf-8') as f:
             f.write(text)
