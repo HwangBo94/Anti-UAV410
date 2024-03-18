@@ -514,7 +514,7 @@ class ExperimentAntiUAV410(object):
                 bbox_transform=fig.transFigure, ncol=4, frameon=False)
 
         # for Re-trained trackers
-        # legend = ax.legend(lines, legends, bbox_to_anchor=(0.98, -0.07), loc="lower right",
+        # legend = ax.legend(lines, legends, bbox_to_anchor=(0.98, -0.06), loc="lower right",
         #                    bbox_transform=fig.transFigure, ncol=4, frameon=False)
         
         matplotlib.rcParams.update({'font.size': 9.0})
@@ -567,7 +567,7 @@ class ExperimentAntiUAV410(object):
                 bbox_transform=fig.transFigure, ncol=4, frameon=False)
 
         # for Re-trained trackers
-        # legend = ax.legend(lines, legends, bbox_to_anchor=(0.97, -0.07), loc="lower right",
+        # legend = ax.legend(lines, legends, bbox_to_anchor=(0.97, -0.06), loc="lower right",
         #                    bbox_transform=fig.transFigure, ncol=4, frameon=False)
 
         matplotlib.rcParams.update({'font.size': 9.0})
@@ -646,7 +646,7 @@ class ExperimentAntiUAV410(object):
                            bbox_transform=fig.transFigure, ncol=4, frameon=False)
 
         # for Re-trained trackers
-        # legend = ax.legend(lines, legends, bbox_to_anchor=(0.98, -0.07), loc="lower right",
+        # legend = ax.legend(lines, legends, bbox_to_anchor=(0.98, -0.06), loc="lower right",
         #                    bbox_transform=fig.transFigure, ncol=4, frameon=False)
 
         matplotlib.rcParams.update({'font.size': 9.0})
@@ -700,7 +700,7 @@ class ExperimentAntiUAV410(object):
                            bbox_transform=fig.transFigure, ncol=4, frameon=False)
 
         # for Re-trained trackers
-        # legend = ax.legend(lines, legends, bbox_to_anchor=(0.97, -0.07), loc="lower right",
+        # legend = ax.legend(lines, legends, bbox_to_anchor=(0.97, -0.06), loc="lower right",
         #                    bbox_transform=fig.transFigure, ncol=4, frameon=False)
 
         matplotlib.rcParams.update({'font.size': 9.0})

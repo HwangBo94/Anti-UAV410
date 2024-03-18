@@ -77,7 +77,6 @@ Trained_Trackers=[
 {'name': 'PrDiMP50', 'path': './Tracking_results/Trained_with_antiuav410/DiMP/prdimp50', 'mode': 1},
 {'name': 'Super_DiMP', 'path': './Tracking_results/Trained_with_antiuav410/DiMP/super_dimp', 'mode': 1},
 {'name': 'GlobalTrack', 'path': './Tracking_results/Trained_with_antiuav410/GlobalTrack', 'mode': 2},
-{'name': 'HiFT', 'path': './Tracking_results/Trained_with_antiuav410/HiFT', 'mode': 1},
 {'name': 'KeepTrack', 'path': './Tracking_results/Trained_with_antiuav410/KeepTrack', 'mode': 1},
 {'name': 'KYS', 'path': './Tracking_results/Trained_with_antiuav410/KYS/default', 'mode': 1},
 {'name': 'ROAM', 'path': './Tracking_results/Trained_with_antiuav410/ROAM', 'mode': 1},
