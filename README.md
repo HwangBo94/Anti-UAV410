@@ -98,8 +98,7 @@ Over 50 trackers are involved, they are:
 
 
 
-SeqTrack-B256 [66] CVPR23 52.87 56.38
-SeqTrack-B384 [66] CVPR23 49.97 53.01
+
 JointNLT [65] CVPR23 48.92 54.36
 SwinTrack-Tiny [64] NIPS22 51.23 56.83
 SwinTrack-Base [64] NIPS22 52.41 55.76
