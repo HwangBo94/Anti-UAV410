@@ -14,6 +14,7 @@ Download the Anti-UAV410 dataset ([Google drive](https://drive.google.com/file/d
     	|--val
     ```
 
+note that the annotations for each video attribute are under the annos/test/att or annos/train/att or annos/val/att paths.
 
 ## Installation and testing
 **Step 1.** Create a conda environment and activate it.
