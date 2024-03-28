@@ -149,6 +149,14 @@ Over 50 trackers are involved, they are:
 * **PrDiMP50.** Danelljan, Martin, et al. "Probabilistic regression for visual tracking." CVPR, 2020. [[Github]](https://github.com/visionml/pytracking)
 
 
+### Analysis of attributes
+The annotations for each video attribute are under the annos/test/att or annos/train/att or annos/val/att paths, and the attributes in order are ['Thermal Crossover', 'Out-of-View', 'Scale Variation', 'Fast Motion', 'Occlusion', 'Dynamic Background Clutter', 'Tiny Size', 'Small Size', 'Medium Size', 'Normal Size']. The attributes for each frame are labelled in IR_label.json, but it is not complete.
+<img src="figures/att/success_plots_of_TC.png" width="30%"><img src="figures/att/success_plots_of_OV.png" width="30%"><img src="figures/att/success_plots_of_SV.png" width="30%">
+<img src="figures/att/success_plots_of_FM.png" width="30%"><img src="figures/att/success_plots_of_OCC.png" width="30%"><img src="figures/att/success_plots_of_DBC.png" width="30%">
+<img src="figures/att/success_plots_of_TS.png" width="30%"><img src="figures/att/success_plots_of_SS.png" width="30%"><img src="figures/att/success_plots_of_MS.png" width="30%">
+<img src="figures/att/success_plots_of_NS.png" width="30%">
+
+
 ## Citation
 
 If you find this project useful in your research, please consider cite:
