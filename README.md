@@ -6,7 +6,11 @@ This toolkit is used to evaluate trackers on generalized infrared UAV tracking b
 
 # News
 
-SiamDT Tracker is released!
+The SiamDT Tracker has been released! Please refer to path 'trackers/SiamDT/'.
+
+The Matlab version of the AntiUAV410 benchmark has been released! Please refer to path 'toolkit_matlab/'.
+
+The Python version of the AntiUAV410 benchmark has been released!
 
 ## Preparing the dataset
 Download the Anti-UAV410 dataset ([Google drive](https://drive.google.com/file/d/1zsdazmKS3mHaEZWS2BnqbYHPEcIaH5WR/view?usp=sharing) and [Baidu disk](https://pan.baidu.com/s/1R-L9gKIRowMgjjt52n48-g?pwd=a410) Access code: a410) to your disk, the organized directory should look like:
