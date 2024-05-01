@@ -56,7 +56,9 @@ python tracking_train_demo.py
 
 **Step 8.** Test SiamDT.
 
-Change the dataset path in 'tracking_test_demo.py':
+Download the demo checkpoints from the following links: ([Google drive](https://drive.google.com/file/d/1iHW4SGYSf2daDFjmchjsSajS_Eh_QXg1/view?usp=sharing) and [Baidu disk](https://pan.baidu.com/s/1hPdw-qrkmF0ljF0yhcK6BQ?pwd=a410) Access code: a410)
+
+Change the dataset path in 'tracking_test_demo.py' and run:
 ```shell
 python tracking_test_demo.py
 ```
