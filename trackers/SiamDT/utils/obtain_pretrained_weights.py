@@ -3,7 +3,7 @@ import torch
 
 if __name__ == '__main__':
 
-    old_ckp_file = 'libs/swintransformer/checkpoints/cascade_mask_rcnn_swin_base_patch4_window7.pth'
+    old_ckp_file = 'libs/swintransformer/checkpoints/cascade_mask_rcnn_swin_tiny_patch4_window7.pth'
 
     old_state_dict = torch.load(old_ckp_file)['state_dict']
 
@@ -23,6 +23,6 @@ if __name__ == '__main__':
 
     # open in torch 1.4.0
     torch.save(new_state_dict,
-               'pretrained_weights/cascade_mask_rcnn_swin_base.pth.tar',
+               'pretrained_weights/cascade_mask_rcnn_swin_tiny.pth.tar',
                _use_new_zipfile_serialization=False)
 
