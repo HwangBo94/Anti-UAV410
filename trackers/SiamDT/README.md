@@ -15,7 +15,7 @@ conda activate SiamDT
 pip install torch===1.8.1+cu111 -f https://download.pytorch.org/whl/torch_stable.html
 pip install torchvision===0.9.1+cu111 -f https://download.pytorch.org/whl/torch_stable.html
 ```
-Other versions of python, cuda and torch are also compatible. Please refer to the installation requirements for SwinTransformer, [swin](https://github.com/SwinTransformer/Swin-Transformer-Object-Detection)
+Other versions of python, cuda and torch are also compatible. Please refer to the installation requirements for [SwinTransformer](https://github.com/SwinTransformer/Swin-Transformer-Object-Detection).
 
 **Step 3.** Install mmcv-full.
 ```shell
@@ -35,7 +35,7 @@ pip install -r requirements/build.txt
 python setup.py develop
 ```
 
-**Step 6.** Preparing pre-trained models.
+**Step 6.** Prepare pre-trained models.
 
 Download the pre-trained model at the [Swin Transformer project](https://github.com/SwinTransformer/Swin-Transformer-Object-Detection), this tutorial uses Cascade Mask R-CNN framework and Swin-T backbone as an example.
 
