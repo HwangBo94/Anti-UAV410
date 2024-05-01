@@ -4,6 +4,10 @@ Anti-UAV410: A Thermal Infrared Benchmark and Customized Scheme for Tracking Dro
 
 This toolkit is used to evaluate trackers on generalized infrared UAV tracking benchmark called Anti-UAV410. The benchmark comprises a total of 410 videos with over 438K manually annotated bounding boxes.
 
+# News
+
+SiamDT Tracker is released!
+
 ## Preparing the dataset
 Download the Anti-UAV410 dataset ([Google drive](https://drive.google.com/file/d/1zsdazmKS3mHaEZWS2BnqbYHPEcIaH5WR/view?usp=sharing) and [Baidu disk](https://pan.baidu.com/s/1R-L9gKIRowMgjjt52n48-g?pwd=a410) Access code: a410) to your disk, the organized directory should look like:
 
@@ -47,7 +51,7 @@ The tracking results will be saved at project_dir/results/AntiUAV410/test/SiamFC
 
 Please refer to the [installation tutorials](trackers/SiamDT/README.md).
 
-**Step 4.** Downloading the tracking results compared in the paper.
+**Step 5.** Downloading the tracking results compared in the paper.
 
 Download the tracking results ([Google drive](https://drive.google.com/file/d/1AlLpoMorj-7bKA1zqo1DkuEZ9h0jQs_-/view?usp=sharing) and [Baidu disk](https://pan.baidu.com/s/12NRarQvIiyZKbXRu5fPGpw?pwd=a410) Access code: a410) to your project directory, the organized directory should look like:
 
@@ -59,7 +63,7 @@ Download the tracking results ([Google drive](https://drive.google.com/file/d/1A
 
 The files inside the Defaults directory are the results of the trackers that are not trained with Anti-UAV410 dataset, while The files inside the Trained_with_antiuav410 directory are the results of the trackers that are re-trained with Anti-UAV410 dataset.
 
-**Step 5.** Visual comparison.
+**Step 6.** Visual comparison.
 
 Change the dataset path and select the trackers that need to be compared visually.
 
@@ -77,7 +81,7 @@ The comparison figures will be saved at project_dir/figures/.
 
 ``not exist'' in the figure means that the target is occluded or out of view.
 
-**Step 6.** Evaluating the trackers.
+**Step 7.** Evaluating the trackers.
 
 Change the dataset path and edit project_dir/utils/trackers.py to select the trackers to be evaluated.
 
