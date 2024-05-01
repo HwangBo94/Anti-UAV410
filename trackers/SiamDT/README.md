@@ -63,6 +63,10 @@ Change the dataset path in 'tracking_test_demo.py' and run:
 python tracking_test_demo.py
 ```
 
+<img src="figures/100.png" width="45%"><img src="figures/196.png" width="45%">
+
+<img src="figures/300.png" width="45%"><img src="figures/400.png" width="45%">
+
 Note: If you want to visualise the tracking results, please use the following command first:
 ```shell
 python -m visdom.server -port=5123
