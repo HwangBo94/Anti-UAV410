@@ -43,6 +43,10 @@ python Demo_for_tracking.py
 ```
 The tracking results will be saved at project_dir/results/AntiUAV410/test/SiamFC.
 
+**Step 4.** Install the SiamDT tracker.
+
+Please refer to the [installation tutorials](trackers/SiamDT/README.md).
+
 **Step 4.** Downloading the tracking results compared in the paper.
 
 Download the tracking results ([Google drive](https://drive.google.com/file/d/1AlLpoMorj-7bKA1zqo1DkuEZ9h0jQs_-/view?usp=sharing) and [Baidu disk](https://pan.baidu.com/s/12NRarQvIiyZKbXRu5fPGpw?pwd=a410) Access code: a410) to your project directory, the organized directory should look like:
@@ -119,7 +123,7 @@ Over 50 trackers are involved, they are:
 * **ROAM.** Yang, Tianyu, et al. "ROAM: Recurrently optimizing tracking model." CVPR, 2020. [[Github]](https://github.com/tyyyang/ROAM)
 * **Siam R-CNN.** Voigtlaender, Paul, et al. "Siam r-cnn: Visual tracking by re-detection." CVPR, 2020. [[Github]](https://www.vision.rwth-aachen.de/page/siamrcnn)
 * **SiamBAN.** Chen, Zedu, et al. "Siamese box adaptive network for visual tracking." CVPR, 2020. [[Github]](https://github.com/hqucv/siamban)
-* **SiamCAR.** Guo, Dongyan, et al. "SiamCAR: Siamese fully convolutional classification and regression for visual tracking." CVPR, 2020. [[Github]](https://github. com/ohhhyeahhh/SiamCAR)
+* **SiamCAR.** Guo, Dongyan, et al. "SiamCAR: Siamese fully convolutional classification and regression for visual tracking." CVPR, 2020. [[Github]](https://github.com/ohhhyeahhh/SiamCAR)
 * **GlobalTrack.** Huang, Lianghua, et al. "Globaltrack: A simple and strong baseline for long-term tracking." AAAI, 2020. [[Github]](https://github.com/huanglianghua/GlobalTrack)
 * **KYS.** Bhat, Goutam, et al. "Know your surroundings: Exploiting scene information for object tracking." ECCV, 2020. [[Github]](https://github.com/visionml/pytracking)
 * **Super DiMP.** -- -- --. [[Github]](https://github.com/visionml/pytracking)
