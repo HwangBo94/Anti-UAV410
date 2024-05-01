@@ -347,7 +347,7 @@ class SiamDTRCNN(TwoStageDetector):
 
     def _process_query(self, img_z, gt_bboxes_z, img_meta_z):
         self._frame = 1
-        self._learning_rate = 0.02
+        self._learning_rate = 0.0
         self._img_meta_z = img_meta_z
 
         z = self.extract_feat(img_z)
