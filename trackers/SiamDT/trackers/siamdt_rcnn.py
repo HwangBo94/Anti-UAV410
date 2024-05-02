@@ -11,6 +11,7 @@ from mmcv.runner import auto_fp16
 from mmdet.core import get_classes, \
     bbox2result, bbox2roi, build_assigner, build_sampler
 
+import copy
 from .similarity_encoders import RPN_Similarity_Learning, RCNN_Similarity_Learning
 
 __all__ = ['SiamDTRCNN']
@@ -99,10 +100,12 @@ class SiamDTRCNN(TwoStageDetector):
 
         # Concat x and x_corr
         x_concat = [x[i] + x_corr[i] for i in range(len(x))]
-        x_concat = tuple(x_concat)
+        # x_concat = tuple(x_concat)
+        x = tuple(x_concat)
 
-        # Dual-Semantic RPN forward and loss
-        rpn_outs = self.rpn_head(x_concat)
+        # # Dual-Semantic RPN forward and loss
+        # rpn_outs = self.rpn_head(x_concat)
+        rpn_outs = self.rpn_head(x)
 
         # 设置gt_labels=None，相当于去除gt_labels
         rpn_loss_inputs = rpn_outs + (gt_bboxes_x, img_meta_x)
@@ -426,17 +429,19 @@ class SiamDTRCNN(TwoStageDetector):
 
         self._frame = self._frame + 1
 
-        x = self.extract_feat(img_x)
+        x_src = self.extract_feat(img_x)
+
+        x = copy.deepcopy(x_src)
 
         # Dual-Semantic Learning
         x_corr = next(self.rpn_similarity_learning(self._template, x))[0]
 
         # Concat x and x_corr
         x_concat = [x[i] + x_corr[i] for i in range(len(x))]
-        x_concat = tuple(x_concat)
+        x = tuple(x_concat)
 
         proposal_list = self.rpn_head.simple_test_rpn(
-            x_concat, img_meta_x)
+            x, img_meta_x)
 
         # proposal_list=[proposal_list[0][:50,:]]
 
@@ -496,7 +501,7 @@ class SiamDTRCNN(TwoStageDetector):
 
             up_flag = True
             new_bbox = det_bboxes[0:0+1, :-1]*img_meta_x[0]['scale_factor']
-            self._update_query(x, proposal_list, [new_bbox], img_meta_x)
+            self._update_query(x_src, proposal_list, [new_bbox], img_meta_x)
 
         else:
             up_flag = False
