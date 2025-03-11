@@ -72,3 +72,47 @@ Note: If you want to visualise the tracking results, please use the following co
 python -m visdom.server -port=5123
 ```
 Then you can see the visualisation on the [http://localhost:5123/](http://localhost:5123/).
+
+
+
+# Common Issues and Possible Solutions
+
+1. **Issue**: `ValueError: need at least one array to concatenate`  
+**Solution**: Delete the `cache` folder under the SiamDT tracker and try again.
+
+---
+
+2. **Issue**:  
+   ```bash
+   tree = Parsing.p_module(s, pxd, full_module_name)
+   gcc: error: ../common/maskApi.c: No such file or directory
+   error: Setup script exited with error: command '/usr/bin/gcc' failed with exit code 1
+   ```
+
+**Solution**: Install an older version of Cython and recompile:
+
+    ```bash
+    pip install cython==0.29.35
+    python setup.py develop
+    ```
+
+---
+
+3. **Issue**: TypeError: FormatCode() got an unexpected keyword argument 'verify'
+**Solution**: Downgrade Yapf to a compatible version:
+```bash
+pip install yapf==0.40.1
+```
+
+4. **Issue**: amp not installed or apex not installed
+**Issue**: Install apex
+
+1) Download:
+
+Apex.zip is available via [Baidu disk](https://pan.baidu.com/s/1eGKJ3HT52g8jabHJUaBHGA?pwd=a410) (Extraction code: a410).
+
+2) Install:
+``bash
+cd apex
+pip install -v --no-cache-dir --global-option="--cpp_ext" --global-option="--cuda_ext" ./
+```
