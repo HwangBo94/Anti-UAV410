@@ -78,6 +78,7 @@ Then you can see the visualisation on the [http://localhost:5123/](http://localh
 # Common Issues and Possible Solutions
 
 **Issue 1**: `ValueError: need at least one array to concatenate`  
+
 **Solution**: Delete the `cache` folder under the SiamDT tracker and try again.
 
 ---
@@ -99,6 +100,7 @@ Then you can see the visualisation on the [http://localhost:5123/](http://localh
 ---
 
 **Issue 3**: `TypeError: FormatCode() got an unexpected keyword argument 'verify'`
+
 **Solution**: Downgrade Yapf to a compatible version:
 ```bash
 pip install yapf==0.40.1
@@ -107,6 +109,7 @@ pip install yapf==0.40.1
 ---
 
 **Issue 4**: `amp not installed or apex not installed`
+
 **Solution**: Install apex
 
 1) Download:
