@@ -77,12 +77,12 @@ Then you can see the visualisation on the [http://localhost:5123/](http://localh
 
 # Common Issues and Possible Solutions
 
-1. **Issue**: `ValueError: need at least one array to concatenate`  
+**Issue 1**: `ValueError: need at least one array to concatenate`  
 **Solution**: Delete the `cache` folder under the SiamDT tracker and try again.
 
 ---
 
-2. **Issue**:  
+**Issue 2**:  
    ```bash
    tree = Parsing.p_module(s, pxd, full_module_name)
    gcc: error: ../common/maskApi.c: No such file or directory
@@ -98,14 +98,16 @@ Then you can see the visualisation on the [http://localhost:5123/](http://localh
 
 ---
 
-3. **Issue**: TypeError: FormatCode() got an unexpected keyword argument 'verify'
+**Issue 3**: TypeError: FormatCode() got an unexpected keyword argument 'verify'
 **Solution**: Downgrade Yapf to a compatible version:
 ```bash
 pip install yapf==0.40.1
 ```
 
-4. **Issue**: amp not installed or apex not installed
-**Issue**: Install apex
+---
+
+**Issue 4**: amp not installed or apex not installed
+**Solution**: Install apex
 
 1) Download:
 
@@ -116,3 +118,4 @@ Apex.zip is available via [Baidu disk](https://pan.baidu.com/s/1eGKJ3HT52g8jabHJ
 cd apex
 pip install -v --no-cache-dir --global-option="--cpp_ext" --global-option="--cuda_ext" ./
 ```
+---
