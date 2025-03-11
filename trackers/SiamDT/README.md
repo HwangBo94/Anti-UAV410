@@ -98,7 +98,7 @@ Then you can see the visualisation on the [http://localhost:5123/](http://localh
 
 ---
 
-**Issue 3**: TypeError: FormatCode() got an unexpected keyword argument 'verify'
+**Issue 3**: `TypeError: FormatCode() got an unexpected keyword argument 'verify'`
 **Solution**: Downgrade Yapf to a compatible version:
 ```bash
 pip install yapf==0.40.1
@@ -106,7 +106,7 @@ pip install yapf==0.40.1
 
 ---
 
-**Issue 4**: amp not installed or apex not installed
+**Issue 4**: `amp not installed or apex not installed`
 **Solution**: Install apex
 
 1) Download:
@@ -114,7 +114,7 @@ pip install yapf==0.40.1
 Apex.zip is available via [Baidu disk](https://pan.baidu.com/s/1eGKJ3HT52g8jabHJUaBHGA?pwd=a410) (Extraction code: a410).
 
 2) Install:
-``bash
+```bash
 cd apex
 pip install -v --no-cache-dir --global-option="--cpp_ext" --global-option="--cuda_ext" ./
 ```
