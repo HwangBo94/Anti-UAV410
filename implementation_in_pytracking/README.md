@@ -11,7 +11,7 @@ This guide provides step-by-step instructions to evaluate and train trackers usi
 ## 🧪 Evaluation on the Anti-UAV410 Dataset
 
 ### 1. Add Dataset Loader
-Download `ForTesting/antiuav410dataset.py` and place it into:
+Download [ForTesting/antiuav410dataset.py](ForTesting/antiuav410dataset.py) and place it into:
 
 ```shell
 pytracking_project/pytracking/evaluation/
@@ -19,7 +19,7 @@ pytracking_project/pytracking/evaluation/
 
 
 ### 2. Register Dataset in `datasets.py`
-Edit `pytracking/pytracking/evaluation/datasets.py` and add the following lines:
+Edit `pytracking_project/pytracking/evaluation/datasets.py` and add the following lines:
 
 ```python
 antiuav410_test=DatasetInfo(module=pt % "antiuav410", class_name="AntiUAV410Dataset", kwargs=dict(split='test')),
@@ -27,7 +27,7 @@ antiuav410_val=DatasetInfo(module=pt % "antiuav410", class_name="AntiUAV410Datas
 ```
 
 ### 3. Add Dataset Path in `local.py`
-Edit `pytracking/pytracking/evaluation/local.py` and add:
+Edit `pytracking_project/pytracking/evaluation/local.py` and add:
 
 ```python
 settings.antiuav410_path = '/media/share/data2/TrackingDatasets/Anti-UAV410/'
@@ -48,7 +48,7 @@ python pytracking/run_tracker.py tomp tomp50 --dataset_name antiuav410_val
 ## 🏋️‍♂️ Training on the Anti-UAV410 Dataset
 
 ### 1. Add Dataset Loader
-Download `ForTraining/antiuav410.py` and place it into:
+Download [ForTraining/antiuav410.py](ForTraining/antiuav410.py) and place it into:
 
 ```shell
 pytracking_project/ltr/dataset/
@@ -120,7 +120,7 @@ python ltr/run_training.py tomp tomp50
 ```
 
 
-## 📁 Directory Overview
+## 📁 Directory Overview (Files need to be changed)
 ```bash
 pytracking/
 ├── pytracking/
@@ -140,6 +140,6 @@ pytracking/
 
 ## 📌 Notes
 
-- You can quickly set up Anti-UAV410 by directly replacing the corresponding files in the PyTracking project with those found under the `ForTesting/` and `ForTraining/` directories.
+- You can quickly set up Anti-UAV410 by directly replacing the corresponding files in the PyTracking project with those found under the [ForTesting/](ForTesting/) and [ForTraining/](ForTraining/) directories.
 
 - You can train and evaluate a variety of trackers depending on your needs, such as **TaMOs**, **RTS**, **ToMP**, **KeepTrack**, **LWL**, **KYS**, **PrDiMP**, **DiMP**, and **ATOM** trackers.
