@@ -130,7 +130,7 @@ pytracking/
 │       └── local.py                     # set dataset path
 ├── ltr/
 │   ├── dataset/
-│   │   ├── __init__.py                  # dataset loader for evaluation
+│   │   ├── __init__.py                  # register dataset
 │   │   └── antiuav410.py                # dataset loader for training
 │   ├── train_settings/
 │   │   └── tomp/tomp50.py              # training config
