@@ -30,7 +30,7 @@ antiuav410_val=DatasetInfo(module=pt % "antiuav410", class_name="AntiUAV410Datas
 Edit `pytracking/pytracking/evaluation/local.py` and add:
 
 ```python
-settings.antiuav410_path = '/media/share/data2/TrackingDatasets/Anti-UAV410/Anti-UAV/'
+settings.antiuav410_path = '/media/share/data2/TrackingDatasets/Anti-UAV410/'
 ```
 
 ### 4. Run Evaluation Using AntoUAV410
@@ -41,7 +41,7 @@ python pytracking/run_tracker.py tomp tomp50 --dataset_name antiuav410_test
 ```
 Validation set:
 ```bash
-python pytracking/run_tracker.py tomp tomp50 --dataset_name antiuav410_test
+python pytracking/run_tracker.py tomp tomp50 --dataset_name antiuav410_val
 ```
 
 
@@ -65,7 +65,7 @@ from .antiuav410 import AntiUAV410
 Edit `pytracking_project/ltr/admin/local.py` and add the following line:
 
 ```python
-self.antiuav410_dir = '/media/data2/TrackingDatasets/Anti-UAV410/Anti-UAV/'
+self.antiuav410_dir = '/media/data2/TrackingDatasets/Anti-UAV410/'
 ```
 
 ### 4. Configure Training Script

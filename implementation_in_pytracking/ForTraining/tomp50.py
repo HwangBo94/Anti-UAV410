@@ -102,7 +102,12 @@ def run(settings):
                                                                    center_sampling_radius=settings.center_sampling_radius)
 
     # Train sampler and loader
-    dataset_train = sampler.DiMPSampler([lasot_train, got10k_train, trackingnet_train, coco_train], [1, 1, 1, 1],
+    # dataset_train = sampler.DiMPSampler([lasot_train, got10k_train, trackingnet_train, coco_train], [1, 1, 1, 1],
+    #                                     samples_per_epoch=settings.train_samples_per_epoch, max_gap=settings.max_gap,
+    #                                     num_test_frames=settings.num_test_frames, num_train_frames=settings.num_train_frames,
+    #                                     processing=data_processing_train)
+
+    dataset_train = sampler.DiMPSampler([antiuav410_train], [1],
                                         samples_per_epoch=settings.train_samples_per_epoch, max_gap=settings.max_gap,
                                         num_test_frames=settings.num_test_frames, num_train_frames=settings.num_train_frames,
                                         processing=data_processing_train)
@@ -111,12 +116,16 @@ def run(settings):
                              shuffle=True, drop_last=True, stack_dim=1)
 
     # Validation samplers and loaders
-    dataset_val = sampler.DiMPSampler([got10k_val], [1], samples_per_epoch=settings.val_samples_per_epoch,
+    # dataset_val = sampler.DiMPSampler([got10k_val], [1], samples_per_epoch=settings.val_samples_per_epoch,
+    #                                   max_gap=settings.max_gap, num_test_frames=settings.num_test_frames,
+    #                                   num_train_frames=settings.num_train_frames, processing=data_processing_val)
+    dataset_val = sampler.DiMPSampler([antiuav410_val], [1], samples_per_epoch=settings.val_samples_per_epoch,
                                       max_gap=settings.max_gap, num_test_frames=settings.num_test_frames,
                                       num_train_frames=settings.num_train_frames, processing=data_processing_val)
 
     loader_val = LTRLoader('val', dataset_val, training=False, batch_size=settings.batch_size, num_workers=settings.num_workers,
                            shuffle=False, drop_last=True, epoch_interval=settings.val_epoch_interval, stack_dim=1)
+                           
 
     # Create network and actor
     net = tompnet.tompnet50(filter_size=settings.target_filter_sz, backbone_pretrained=True, head_feat_blocks=0,

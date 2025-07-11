@@ -6,6 +6,8 @@ This toolkit is used to evaluate trackers on generalized infrared UAV tracking b
 
 # News
 
+* Integrating **Anti-UAV410** with **PyTracking** has been released! Please refer to path [implementation_in_pytracking/](implementation_in_pytracking/README.md)
+
 * The **SiamDT Tracker** has been released! Please refer to path [trackers/SiamDT/](trackers/SiamDT/README.md).
 
 * The **Matlab version of the AntiUAV410 benchmark** has been released! Please refer to path [toolkit_matlab/](toolkit_matlab/).
